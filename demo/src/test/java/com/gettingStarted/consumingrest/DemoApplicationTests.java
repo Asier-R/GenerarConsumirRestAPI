@@ -19,6 +19,7 @@ class ConsumingRestApplicationTests {
 	void contextLoads() {
 	}
 	
+	//Necesita de la app quoters para funcionar
 	@Test
 	void shouldReturnQuote() {
 		ResponseEntity<Quote> response = restTemplate.getForEntity("/quotes/test", Quote.class);
